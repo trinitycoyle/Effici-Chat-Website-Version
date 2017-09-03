@@ -1,0 +1,103 @@
+{
+	"departments": [
+	{
+	"name": "Department 1",
+	"image": "images/Image1.png",
+	"messages": [
+        {
+          "message": "It is great to be working again!",
+          "user": "George",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "message": "No it is not!",
+          "user": "Mary",
+          "date": "2012-10-16T17:57:28.556094Z"
+        }
+    ]
+	},
+	{
+	"name": "Department 2",
+	"image": "images/Image2.png",
+	"messages": [
+        {
+          "message": "It is great to be working again!",
+          "user": "George",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "message": "No it is not!",
+          "user": "Mary",
+          "date": "2012-10-16T17:57:28.556094Z"
+        }
+    ]
+	},
+	{
+	"name": "Department 3",
+	"image": "images/Image3.png",
+	"messages": [
+        {
+          "message": "It is great to be working again!",
+          "user": "George",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "message": "No it is not!",
+          "user": "Mary",
+          "date": "2012-10-16T17:57:28.556094Z"
+        }
+    ]
+	}
+	],
+
+	"projects": [
+	{
+	"name": "Project A",
+	"image": "images/ImageA.png",
+	"messages": [
+        {
+          "message": "It is great to be working again!",
+          "user": "George",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "message": "No it is not!",
+          "user": "Mary",
+          "date": "2012-10-16T17:57:28.556094Z"
+        }
+    ]
+	},
+	{
+	"name": "Project B",
+	"image": "images/ImageB.png",
+	"messages": [
+        {
+          "message": "It is great to be working again!",
+          "user": "George",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "message": "No it is not!",
+          "user": "Mary",
+          "date": "2012-10-16T17:57:28.556094Z"
+        }
+    ]
+	},
+	{
+	"name": "Project C",
+	"image": "images/ImageC.png",
+	"messages": [
+        {
+          "message": "It is great to be working again!",
+          "user": "George",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "message": "No it is not!",
+          "user": "Mary",
+          "date": "2012-10-16T17:57:28.556094Z"
+        }
+    ]
+	}
+	]
+}

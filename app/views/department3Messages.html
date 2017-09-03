@@ -1,0 +1,206 @@
+<div class="row row-content" ng-controller="CompanyController">
+        <div class="col-xs-12 col-sm-3">
+        <div id="company">
+            <h3 id="companyBar" align="center"><i class="fa fa-suitcase" aria-hidden="true"></i> Company</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <h4 id="departmentsBar" align="center"><i class="fa fa-th" aria-hidden="true"></i> Departments</h4>
+                            <div class="box">
+                            	<div class="internal">
+                            		<ul id="deptList" class="list-unstyled smaller">
+                            			<li>
+                                            <div class="row">
+                                            <div class="col-sm-2">
+                                        
+                                            <img class="imageStyle" src="images/Image1.png">
+                                        
+                                            </div>
+                                            <div class="col-sm-10">
+                                            <a class="titleStyle" ui-sref="app.department1Messages" groupName="departmentGroup" ng-click="dept1Alert()">Department 1</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                            <div class="col-sm-2">
+                                        
+                                            <img class="imageStyle" src="images/Image2.png">
+                                        
+                                            </div>
+                                            <div class="col-sm-10">
+                                            <a class="titleStyle" ui-sref="app.department2Messages" groupName="departmentGroup" ng-click="dept2Alert()">Department 2</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                            <div class="col-sm-2">
+                                        
+                                            <img class="imageStyle" src="images/Image3.png">
+                                        
+                                            </div>
+                                            <div class="col-sm-10">
+                                            <a class="titleStyle" ui-sref="app.department3Messages" groupName="departmentGroup" ng-click="dept3Alert()">Department 3</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                            		</ul>
+                            	</div>
+                            <div class="col-xs-8"></div>
+                            <div class="col-xs-4">
+                            <button class="btn btn-block new" title="This functionality will be available soon.  Check back for updates!" title-direction="right"><span class="glyphicon glyphicon-plus-sign"></span> New</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <h4 id="projectsBar" align="center"><i class="fa fa-clipboard" aria-hidden="true"></i> Projects</h4>
+                            <div class="box">
+                            <div class="internal">
+                            	<ul id="projList" class="list-unstyled smaller">
+                            		<li>
+                                            <div class="row">
+                                            <div class="col-sm-2">
+                                        
+                                            <img class="imageStyle" src="images/ImageA.png">
+                                        
+                                            </div>
+                                            <div class="col-sm-10">
+                                            <a class="titleStyle" ui-sref="app.projectAMessages" groupName="departmentGroup" ng-click="projAAlert()">Project A</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                            <div class="col-sm-2">
+                                        
+                                            <img class="imageStyle" src="images/ImageB.png">
+                                        
+                                            </div>
+                                            <div class="col-sm-10">
+                                            <a class="titleStyle" ui-sref="app.projectBMessages" groupName="departmentGroup" ng-click="projBAlert()">Project B</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                            <div class="col-sm-2">
+                                        
+                                            <img class="imageStyle" src="images/ImageC.png">
+                                        
+                                            </div>
+                                            <div class="col-sm-10">
+                                            <a class="titleStyle" ui-sref="app.projectCMessages" groupName="departmentGroup" ng-click="projCAlert()">Project C</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                            	</ul>
+                            </div>
+                            <div class="col-xs-8"></div>
+                            <div class="col-xs-4">
+                            <button class="btn btn-block new" title="This functionality will be available soon.  Check back for updates!" title-direction="right"><span class="glyphicon glyphicon-plus-sign"></span> New</button>
+                            </div>
+                            </div>
+                        </div>    
+                    </div>
+        </div>        
+        </div>
+    
+        
+        <div class="col-xs-12 col-sm-7">
+        <div id="chat">
+            <h3 align="center"><img class="imageStyle" src="images/Image3.png"> Department 3</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                    <div id="chatMessages" ng-controller="DeptThreeListCtrl as listThree">
+                    <ul class="list-unstyled" id="newMessage" ng-repeat="messageThree in listThree.messagesThree | filter:queryText">
+                    <li>{{ messageThree.text }}</li>
+                    </ul>
+                </div>
+                    </div>    
+                </div>
+        </div>
+        <div class="col-xs-9">
+        <div id="message" ng-controller="DeptThreePostCtrl as postThree">
+        <form name="messageForm" role="submit" ng-submit="postThree.addMessage(postThree.newMessage)" role="form">
+        <div class="form-group">
+            <textarea id="yourMessage" rows="7" ng-model="postThree.newMessage" class="form-control"></textarea>
+                <div class="col-xs-8"></div>
+                <div class="col-xs-2">
+                    <form name="upload" class="form" data-ng-submit="addFile()">
+  <input class="inputfile" type="file" name="file" multiple 
+ onchange="angular.element(this).scope().uploadedFile(this)" />
+                    <label for="file"><button id="attach" class="btn btn-block" type="submit" title="This functionality will be available soon.  Check back for updates!" title-direction="top"><i class="fa fa-paperclip" aria-hidden="true"></i> File</button></label>
+                    </form>
+                </div>
+                <div class="col-xs-2">
+                    <button type="submit" id="send" class="btn btn-block"><i class="fa fa-envelope" aria-hidden="true"></i> Send</button>
+                </div>
+        </div>
+        </form>
+        </div>
+        <div class="col-xs-3"></div>        
+        </div>
+        </div>
+        
+        
+        <div class="col-xs-12 col-sm-2">
+        <div id="search">
+            <div id="searchArea">
+            <label for="searchBox" class="item-input-wrapper">
+            <input id="searchBox" type="text" placeholder="search" ng-model="queryText">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-8">
+            <h4 id="fileSearch"><i class="fa fa-search" aria-hidden="true"></i> Type to search</h4>
+            </label>
+            </div>
+            </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <h4 id="usersBar" align="center"><i class="fa fa-users" aria-hidden="true"></i> Users</h4>
+                            <div class="box2">
+                            <div class="internal">
+                            <div class="media-left media-middle">
+                            <img class="media-object img-thumbnail img-circle" 
+                        ng-src={{department.image}}>
+                            </div>
+                            <div class="media-body">
+                            <ul class="list-unstyled">
+                                <li><h5>{{username}}</h5></li>
+                            </ul>
+                            </div>
+                            </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <h4 id="alertsBar" align="center"><span class="glyphicon glyphicon-alert"></span> Alerts</h4>
+                            <div class="box2">
+                            <div class="internal2">
+                            <ul class="list-unstyled">
+                            <li ng-repeat="project in projects">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <img class="imageStyle" ng-src="{{project.image}}">
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <a class="titleStyle" ng-click="openAlerts()">{{project.name}}</a>
+                                    </div>
+                                </div>
+                            </li>
+                            </ul>
+                            </div>
+                            </div>
+                            <div class="col-xs-4"></div>
+                            <div class="col-xs-8">
+                            <button id="finish" class="btn btn-block new" title="This functionality will be available soon.  Check back for updates!" title-direction="top"><span class="glyphicon glyphicon-ok"></span> Finish</button>
+                            </div>
+                            </div>
+                        </div>    
+                    </div>
+        </div>
+        </div>
+    </div>

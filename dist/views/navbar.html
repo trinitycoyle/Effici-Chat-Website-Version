@@ -1,0 +1,22 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="app" ng-click="homeAlert()"><img src="images/EfficiChatLogo.png" height=80 width=200 alt="Effici-Chat"></a>
+        </div>
+        <div class="navbar-collapse collapse" id="userLogin">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-if="!loggedIn"><a id="loginModalButton" role="button" class="btn btn-block btn-md" ng-click="openLogin()">
+                    <i class="fa fa-power-off" aria-hidden="true"></i> Login</a>
+                </li>
+                <li ng-if="loggedIn">
+                    <a>{{username}}</a>
+                </li>
+                <li ng-if="loggedIn">
+                    <a role="button" class="btn btn-block btn-md" ng-click="logOut()">
+                    <i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
+                </li>
+            </ul>    
+        </div>
+    </div>
+</nav>
+    

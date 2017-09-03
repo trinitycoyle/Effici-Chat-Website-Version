@@ -1,0 +1,313 @@
+.row-content {
+    padding: 40px 0px 0px 0px;
+    min-height:200px;
+}
+
+body{
+	margin: 0;
+    padding: 50px 0px 0px 0px;
+    z-index:0;
+}
+
+.container-fluid {
+	margin: 0;
+}
+
+.navbar-inverse {
+     background: #52A2FF;
+     height: 100px;
+}
+
+#userLogin {
+	position: relative;
+}
+
+#userLogin .nav {
+	position: absolute; 
+    bottom: 0; 
+    right: 0;
+    margin-bottom: -40px;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+#loginModalButton {
+	color: #000;
+	background: #AC7CE3;
+	border-radius: 0px; 
+	padding: 10px;
+}
+
+.ngdialog-content {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.ngdialog-content > .ngdialog-close{
+  display:none; /*hide original close button*/
+}
+
+.ngdialog-message {
+	background: #AC7CE3;
+	border-radius: 0px;
+	padding: 10px;
+}
+
+.dialog-content {
+	color: #000;
+	background: #AC7CE3;
+}
+
+.dialog-header {
+	background: #AC7CE3;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+#loginTitle {
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+.dialog-body {
+	background: #AC7CE3;
+	padding: 35px;
+}
+
+#username, #password {
+	border-radius: 0px;
+	padding-top, padding-bottom: 5px;
+}
+
+#cancel {
+	margin-bottom: 0;
+	margin-right: 0;
+	border-radius: 0px;
+	display: block;
+}
+
+#loginButtons {
+	margin-right: -5px;
+}
+
+#submit {
+	margin-bottom: 0;
+	margin-right: 0px;
+	border-radius: 0px;
+	display: block;
+	background: #4BFAB7;
+}
+
+#newReg {
+	text-align: center;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+#newRegLink {
+	color: #3B63E6;
+}
+
+.regForm {
+	padding: 10px;
+}
+
+#regButtons {
+	width: 330px;
+}
+
+#regCancel	{
+	margin-bottom: 0;
+	margin-right: 0;
+	border-radius: 0px;
+	display: block;
+	margin-left: -10px;
+}
+
+#regSubmit {
+	margin-bottom: 0;
+	margin-right: 0px;
+	border-radius: 0px;
+	display: block;
+	background: #4BFAB7;	
+}
+
+.centered {
+	text-align: center;
+}
+
+#fileSearch {
+	background: #AC7CE3;
+	border-radius: 0px;
+	margin-bottom: 0;
+	margin-right: 0;
+	display: block;
+	padding: 5px;
+	width: 115px;
+	font-size: 12px;
+	margin-left: -39px;
+	margin-top: -2px;
+}
+
+#searchArea {
+	background: #4BFAB7;
+	padding: 10px;
+	height: 100px;
+}
+
+#searchBox {
+	width: 90%;
+	margin: 5px;
+}
+
+#company {
+	background: #D6DBFF;
+	padding: 15px;
+}
+
+#chat {
+	background: #fff;
+	height: 375px;
+}
+
+#message {
+	background: #54A3FF;
+	padding: 15px 15px 45px 15px;
+}
+
+#yourMessage {
+	min-width: 100%;
+}
+
+#attach {
+	background: #4BFAB7;
+	display: block;
+	border-radius: 0px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: 25px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#send {
+	background: #AC7CE3;
+	display: block;
+	border-radius: 0px;
+	margin-bottom: 0;
+	margin-right: 0px;
+	margin-left: 15px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+#search {
+	background: #D6DBFF;
+	padding: 15px;
+	margin-top: 10px;
+}
+
+#companyBar {
+	background: #3B63E6;
+	padding: 15px;
+}
+
+#deptList, #projList {
+	color: #000;
+	font-size: 16px;
+	padding: 5px;
+}
+
+.titleStyle {
+	color: #000;
+	text-decoration: none;
+	line-height: 2em;
+}
+
+.alert {
+	padding: 20px;
+    background-color: #AC7CE3;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.smaller {
+	font-size: small;
+}
+
+.imageStyle {
+	height: 30px;
+	width: 30px;
+}
+
+#departmentsBar, #projectsBar, #alertsBar {
+	background: #AC7CE3;
+	padding: 10px;
+	margin-top: -10px;
+}
+
+#usersBar {
+	background: #52A2FF;
+	padding: 10px;
+	margin-top: -10px;
+}
+
+.box {
+	margin-top: -10px;
+	background: #fff;
+	height: 223px;
+}
+
+.internal {
+	padding: 25px;
+	height: 150px;
+}
+
+.internal2 {
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 0;
+	margin-right: -15px;
+	height: 120px;
+}
+
+.box2 {
+	margin-top: -10px;
+	background: #fff;
+	height: 210px;
+}
+
+.new {
+	background: #4BFAB7;
+	padding: 5px;
+	margin-bottom: 0;
+	margin-right: 0;
+	border-radius: 0px;
+	display: block;
+}
+
+#finish {
+	margin-top: -45px;
+}
